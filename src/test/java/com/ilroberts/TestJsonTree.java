@@ -3,7 +3,7 @@ package com.ilroberts;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.jetbrains.annotations.NotNull;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,7 +23,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class TestJsonTree {
 
     private String json;
-    private JsonNode rootNode;
 
     @Before
     public void init() throws IOException {
@@ -81,12 +80,10 @@ public class TestJsonTree {
 
     }
 
-    @NotNull
     public static <T> Stream<T> stream(Iterable<T> it){
         return StreamSupport.stream(it.spliterator(), false);
     }
 
-    @NotNull
     public static <T> Stream<T> stream(Iterator<T> it){
         return stream(()->it);
     }

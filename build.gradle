@@ -14,6 +14,9 @@ dependencies {
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0'
 
+    // https://mvnrepository.com/artifact/io.atlassian.fugue/fugue
+    compile group: 'io.atlassian.fugue', name: 'fugue', version: '4.5.0'
+
     // https://mvnrepository.com/artifact/org.assertj/assertj-core
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
 
